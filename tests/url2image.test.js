@@ -1,10 +1,22 @@
 const url2image = require('../src/url2image.js')
+const fs = require('fs')
+
+beforeEach(() => {
+
+    try {
+        fs.unlinkSync("example.png")
+        //file removed
+    } catch(err) {
+
+    }
+});
 test('take image of google.com',async ()=>{
-    let result =await url2image("https://google.com","example.png")
-    expect(result).toBe(true);
+
+    let res = await url2image("https://google.com","example.png")
+    expect(res).toBe(true)
 });
 
 test('bad url',async ()=>{
-    let result =await url2image("sadf","example.png")
-    expect(result).toBe(false);
+    url2image("sadf","example.png").catch(
+    expect(fs.existsSync("example.png")).toBe(false))
 });

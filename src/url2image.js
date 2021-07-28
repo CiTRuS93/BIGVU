@@ -4,7 +4,7 @@ const puppeteer = require("puppeteer");
  * @param {string} url website url to screenshot
  * @param {string | URL} filename - path for saving image
  */
-module.exports = async (url, filename) => {
+module.exports = async (url, filename) =>{
     try {
         new URL(url);
     } catch (ERR_INVALID_URL) {

@@ -5,3 +5,9 @@ test('video from image',async ()=>{
     expect(res).toBe(process.cwd()+"\\vid.mp4")
     )
 });
+
+test('video from non existing image',async ()=>{
+    image2video("notReal.png","vid.mp4").catch((err)=>
+        expect(err).toBe("invalid image")
+    )
+});
