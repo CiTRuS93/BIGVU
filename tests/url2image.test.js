@@ -14,7 +14,7 @@ test('take image of google.com',async ()=>{
 
     let res = await url2image("https://google.com","example.png")
     expect(res).toBe(true)
-});
+},10000);
 
 test('bad url',async ()=>{
     url2image("sadf","example.png").catch(
