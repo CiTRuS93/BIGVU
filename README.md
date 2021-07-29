@@ -1,6 +1,6 @@
 # BIGVU
 ----
-
+![example workflow](https://github.com/CiTRuS93/BIGVU/actions/workflows/node.js.yml/badge.svg)
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
