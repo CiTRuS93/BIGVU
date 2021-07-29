@@ -3,7 +3,7 @@ const supertest = require("supertest");
 test("Post", async () => {
 
     await supertest(app).post("/").send({url:"https://google.com"}).expect(200).then((response) => {
-        expect(response.body).toStrictEqual({file:process.cwd()+"\\vid.mp4"})
+        expect(response.body).toStrictEqual({file:process.cwd()+"/vid.mp4"})
     })
 }, 200000)
 
