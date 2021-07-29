@@ -1,4 +1,4 @@
-var videoshow = require('videoshow')
+const videoshow = require('videoshow')
 const path = require("path");
 const fs = require('fs')
 const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
@@ -24,9 +24,7 @@ module.exports = async (imagePath,videoFileName) => {
           reject("invalid image")
       }
       videoshow([imagePath], videoOptions).save(videoFileName)
-            .on('start', function (command) {
-                console.log('ffmpeg process started:', command)
-            })
+
             .on('error', function (err, stdout, stderr) {
 
                 reject("error while process video")

@@ -19,4 +19,4 @@ test('take image of google.com',async ()=>{
 test('bad url',async ()=>{
     url2image("sadf","example.png").catch(
     expect(fs.existsSync("example.png")).toBe(false))
-});
+},10000);

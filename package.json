@@ -4,7 +4,7 @@
   "description": "Assignment for BIGVU",
   "main": "index.js",
   "scripts": {
-    "run": "sls offline start",
+    "start": "sls offline start",
     "test": "jest"
   },
   "repository": {
