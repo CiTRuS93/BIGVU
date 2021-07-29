@@ -13,16 +13,13 @@
 Assignment for BIGVU
 
 ### Installation
-npm i
+```npm i```
 
 ### Usage
-npm start
-
-### Contribution
-
+```npm start```
 
 ### Test-Instructions
-npm test
+```npm test```
 
 ### Contact-Information
 [Github Profile](https://github.com/CiTRuS93)
